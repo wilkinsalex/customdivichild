@@ -87,7 +87,7 @@ add_filter('login_headertitle', 'gs_loginmeta');
 
 
 /* BEGIN MASTER DISABLE AND ALTERATION SECTION IF LOGGED IN USER IS NOT US "WILKINS IT"*/
-   IF('WilkinsIT' == $user_login){
+   IF('<ENTER YOUR ADMIN USERNAME HERE' == $user_login){
 	   add_action( 'admin_bar_menu', 'append_nodes_to_admin_bar',1000 );
 		function append_nodes_to_admin_bar($wp_admin_bar) {
 			 //Adds Tools Menu
